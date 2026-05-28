@@ -22,7 +22,7 @@ public class EditarProductoActivity extends AppCompatActivity {
         etPrecio = findViewById(R.id.etPrecio);
         btnActualizar = findViewById(R.id.btnActualizar);
 
-        // 👉 RECIBIR DATOS
+
         position = getIntent().getIntExtra("position", -1);
         String nombre = getIntent().getStringExtra("nombre");
         double precio = getIntent().getDoubleExtra("precio", 0);

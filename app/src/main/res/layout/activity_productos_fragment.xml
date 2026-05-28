@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔍 Buscador -->
+    <EditText
+        android:id="@+id/etBuscar"
+        android:hint="Ingresa nombre o código de producto"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:padding="12dp"
+        android:layout_margin="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- ➕ BOTÓN AGREGAR (VERSIÓN SIMPLE QUE PEDISTE) -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:text="Agregar Producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 📋 Lista -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
